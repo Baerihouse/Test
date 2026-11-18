@@ -1,5 +1,7 @@
 # MIGRATION.md
 
+제품 0.3.0: 원격 SQL migration은 없다. IndexedDB 신규 version1은 `repository.client.ts`의 `onupgradeneeded`에서 두 store를 생성한다. 기존84A localStorage는 읽기/삭제/변환하지 않고 링크로 보존한다. IndexedDB 향후 버전 변경 시 기존 aggregate/Blob을 삭제하는 자동 초기화 대신 별도 업그레이드와 백업/복구 검증이 필요하다.
+
 이 문서는 DB schema, RPC, RLS, seed, 데이터 보정 작업의 변경 절차를 정리한다.
 
 DB 변경이 생기기 전까지 프로젝트별 migration log는 비워둘 수 있다. 다만 Woomi 표준 DB는 Supabase PostgreSQL을 기준으로 하므로 migration 전략은 아래 원칙을 따른다.

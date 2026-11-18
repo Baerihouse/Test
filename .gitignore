@@ -39,3 +39,67 @@ Thumbs.db
 
 # Claude Code가 만드는 로컬 워크트리. `.git/info/exclude`에만 있어 클론에는 전달되지 않았다.
 .claude/worktrees/
+
+# Cloudflare 로컬 비밀값. 실제 값 없는 예시 파일은 공유한다.
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+!.dev.vars.*.example
+
+# 개인키와 인증서 저장소. 공개 인증서(.crt/.cer)는 제외하지 않는다.
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+
+# 저장소 안에 실수로 복사한 로컬 인증정보
+.aws/
+.ssh/
+.azure/
+.config/gcloud/
+.codex/auth.json
+.codex/sessions/
+.codex/log/
+.codex/history.jsonl
+.npmrc.local
+
+# 추가 패키지 캐시 / 배포 도구의 로컬 상태
+.pnpm-store/
+.npm/
+.cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.vercel/
+.netlify/
+supabase/.temp/
+supabase/.branches/
+
+# 브라우저 테스트 결과와 로그인 상태
+playwright-report/
+test-results/
+blob-report/
+playwright/.auth/
+
+# 편집기 개인 설정. 팀에서 공유하는 VS Code 설정은 허용한다.
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# 임시 파일 / Windows·Office 잠금 파일
+*.tmp
+*.temp
+~$*
+Desktop.ini
+$RECYCLE.BIN/

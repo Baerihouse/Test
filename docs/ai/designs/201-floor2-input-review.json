@@ -1,0 +1,243 @@
+{
+  "reviewDate": "2026-11-18",
+  "status": "input-review-only",
+  "units": "mm",
+  "sources": [
+    {
+      "file": "201동 평면도.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\201동 평면도.pdf",
+      "sha256": "5a8589e7723868f574250032e7a885127866740a23029e7929085bd2cb83619c",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1190.550048828125,
+            841.8900146484375
+          ],
+          "textChars": 676,
+          "drawings": 59399
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "201동 단면도.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\201동 단면도.pdf",
+      "sha256": "0c4a39f7264c47ec94f13ffd7573e3107d23498b13bd26c769d08b39b7b8e867",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1190.550048828125,
+            841.8900146484375
+          ],
+          "textChars": 1315,
+          "drawings": 454643
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "201동 정면도, 우측면도.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\201동 정면도, 우측면도.pdf",
+      "sha256": "a0aac43d1373b28311d5269618ab2556f9962e32ab9fb6b1930fca41efdb8234",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1190.550048828125,
+            841.8900146484375
+          ],
+          "textChars": 506,
+          "drawings": 15063
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "201동 배면도,좌측면도.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\201동 배면도,좌측면도.pdf",
+      "sha256": "befc90ddad64acd5609ffa291a070b8e3a336cc77b0f15335538bca8389cf317",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1190.550048828125,
+            841.8900146484375
+          ],
+          "textChars": 516,
+          "drawings": 6283
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84A 창호일람표(기본형).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84A 창호일람표(기본형).pdf",
+      "sha256": "eb6e99d97a3723ac28218e55f6ff5e87dbfc08df7d857fe6ed6db12f3949ccc4",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1190.550048828125,
+            841.8900146484375
+          ],
+          "textChars": 882,
+          "drawings": 1149
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84A 창호일람표(확장형).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84A 창호일람표(확장형).pdf",
+      "sha256": "a5c2fafb7e0a035cf52e97880fe023efef4163a019daf2d7a52d1f7e729d31ba",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1190.550048828125,
+            841.8900146484375
+          ],
+          "textChars": 1474,
+          "drawings": 1930
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84B 창호일람표(기본형).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84B 창호일람표(기본형).pdf",
+      "sha256": "ea32d7305d1f4c171419511741f66f6886bb26299ed21b70da41bd3c502f4067",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1190.550048828125,
+            841.8900146484375
+          ],
+          "textChars": 1098,
+          "drawings": 1427
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84B 창호일람표(확장형).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84B 창호일람표(확장형).pdf",
+      "sha256": "28c27eba8dfefb0c9eec0b05d73b4c18a3615ed9f5f00a6cfd53160cf32f0a6e",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1190.550048828125,
+            841.8900146484375
+          ],
+          "textChars": 1478,
+          "drawings": 1928
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84C 창호일람표(기본형).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84C 창호일람표(기본형).pdf",
+      "sha256": "4158d227e78b4514174ba3a8edf31db34548274706b8e9f95e780b1826439426",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1190.550048828125,
+            841.8900146484375
+          ],
+          "textChars": 1086,
+          "drawings": 1442
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84C 창호일람표(확장형).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84C 창호일람표(확장형).pdf",
+      "sha256": "55d00233e6c503fda4d6b7acdee444a0b3e4a38ce9fbae92224ad72dcf2821b0",
+      "pages": [
+        {
+          "page": 1,
+          "size": [
+            1190.550048828125,
+            841.8900146484375
+          ],
+          "textChars": 1704,
+          "drawings": 2224
+        }
+      ],
+      "sourceUnchanged": true
+    }
+  ],
+  "floor": {
+    "building": "201동",
+    "level": 2,
+    "unitType": "84A",
+    "unitCount": 4,
+    "variant": "확장형",
+    "variantStatus": "user-selected; drawing-match-pending",
+    "dimensionLineWidth": {
+      "value": 58520,
+      "sourceFile": "201동 평면도.pdf",
+      "page": 1,
+      "status": "drawing-confirmed",
+      "note": "외곽 경계 크기가 아닌 명시 치수선"
+    },
+    "dimensionLineDepth": {
+      "value": 12795,
+      "sourceFile": "201동 평면도.pdf",
+      "page": 1,
+      "status": "drawing-confirmed",
+      "note": ""
+    },
+    "repeatedHorizontalDimension": {
+      "value": 14630,
+      "sourceFile": "201동 평면도.pdf",
+      "page": 1,
+      "status": "drawing-confirmed",
+      "note": ""
+    },
+    "slElevationRelativeGL": {
+      "value": 3550,
+      "sourceFile": "201동 단면도.pdf",
+      "page": 1,
+      "status": "user-confirmed-building-section",
+      "note": ""
+    },
+    "nextFloorSlElevationRelativeGL": {
+      "value": 6350,
+      "sourceFile": "201동 단면도.pdf",
+      "page": 1,
+      "status": "drawing-confirmed",
+      "note": ""
+    },
+    "slToSlHeight": {
+      "value": 2800,
+      "sourceFile": "201동 단면도.pdf",
+      "page": 1,
+      "status": "drawing-confirmed",
+      "note": "6350 - 3550; 천장고 또는 벽 높이가 아님"
+    },
+    "slabThickness": null,
+    "structuralWallThickness": null,
+    "finishAssemblies": null,
+    "clearCeilingHeight": null,
+    "geometry": null
+  },
+  "openIssues": [
+    "선택된 확장형의 층별 배치 정합",
+    "201동 2층 동 구조평면도 및 SW12/SW20, 보 일람 보완",
+    "부분별 마감 구성 및 FL/SL 관계 정합",
+    "현장 적용 시공 순서"
+  ],
+  "limitations": [
+    "3D 모델 생성 미실행",
+    "벽/창호 자동 인식 정확도 미검증",
+    "CAD 및 스캔 입력 미검증"
+  ]
+}

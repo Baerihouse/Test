@@ -4,8 +4,9 @@ Woomi 표준 웹 서비스 프로젝트에서 모든 AI 에이전트가 먼저 �
 
 이 문서는 길게 구현 방법을 설명하지 않는다. 작업 유형을 분류하고, 필요한 `.agents/*` 문서로 라우팅하며, 보안/배포/데이터 손실 같은 절대 금지 규칙만 직접 가진다.
 
-- 표준 버전: `2.30-draft`
-- 최종 수정일: 2026-10-23
+- 제품 버전: `0.3.0` (건축 도면 모델링)
+- 기반 템플릿 표준: `2.30-draft`
+- 최종 수정일: 2026-11-18
 - 기준 레퍼런스: CTPA Hono Worker layered architecture
 - 1차 원칙: 실제 코드와 가장 가까운 프로젝트 문서가 우선한다. 단, 보안/배포/데이터 손실 금지 규칙은 완화할 수 없다.
 
@@ -16,15 +17,15 @@ Woomi 표준 웹 서비스 프로젝트에서 모든 AI 에이전트가 먼저 �
 프로젝트 시작 시 비개발자도 답할 수 있는 항목만 먼저 채운다.
 
 ```txt
-Project name:
-What it does:
-Main users:
-Core workflows:
-Important data:
-Admin roles:
-External services:
-Launch target:
-Do not touch:
+Project name: 건축 도면 모델링 (가칭)
+What it does: 현장별 도면으로 골조·마감·시공 순서를 확인하는 3D 프로그램을 목표로 함
+Main users: 건설 현장 관계자 (세부 역할 확인 필요)
+Core workflows: 자료 등록 → 인식 확인/수정 → 층별 모델 → 보기 전환 (목표 흐름)
+Important data: 원본 도면, 기준 치수/표고, 구조 부재, 마감재와 층 구성, 확인 필요 항목
+Admin roles: 확인 필요; 현재 데모 인증 유지
+External services: 없음; 현장/PDF/검토/모델은 사용자별 브라우저 IndexedDB 저장
+Launch target: 미정; PDF 수동 검토 기반 현장/층별 3D 생성, DWG/DWF는 후속
+Do not touch: 원본 PDF, 기존 사용자 변경, 승인 없는 운영 배포/데이터 변경
 ```
 
 기술 항목은 에이전트가 실제 코드와 설정을 확인한 뒤 관련 `.agents/*` 문서 또는 `Project Override`에 반영한다.

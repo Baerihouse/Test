@@ -1,0 +1,171 @@
+{
+  "reviewDate": "2026-11-18",
+  "status": "review-only",
+  "sources": [
+    {
+      "file": "84A 단위세대 발코니 평,입,단면 상세도-1.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84A 단위세대 발코니 평,입,단면 상세도-1.pdf",
+      "sha256": "52c60fd88be6479fd1a14c9f81c05785b04e0107732c3fb08ad8b0be68c7d462",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 1321
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84A 단위세대 발코니 평,입,단면 상세도-2.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84A 단위세대 발코니 평,입,단면 상세도-2.pdf",
+      "sha256": "1a5139c86152e884460138dbeb95f5790a58926b3059c6f92ec707ddefaf5595",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 1199
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84A 단위세대평면도(확장형).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84A 단위세대평면도(확장형).pdf",
+      "sha256": "28133aa133aba764172b8370ac80420a7dbd89ea46d297800cedfcdce4d73648",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 1321
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84A 주단면도(확장형).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84A 주단면도(확장형).pdf",
+      "sha256": "c09523b44a25c35e5f4e446fe1901d2f9d0b44d8e1f99cee4e5672ee257c3a37",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 1954
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84A 창호일람표(확장형).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84A 창호일람표(확장형).pdf",
+      "sha256": "a5c2fafb7e0a035cf52e97880fe023efef4163a019daf2d7a52d1f7e729d31ba",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 1474
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "공용부 창호일람표-1.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\공용부 창호일람표-1.pdf",
+      "sha256": "0590f76284ee93ab06208eb2e15a2029bc514988a5903a9440424bda6698b07a",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 1169
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "공용부 창호일람표-2.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\공용부 창호일람표-2.pdf",
+      "sha256": "8623d2a32b147622f95de66d7c7f3afec2b5e61a943866f06aec60232914ee4f",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 1766
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "실내외재료마감표(아파트).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\실내외재료마감표(아파트).pdf",
+      "sha256": "d7ca58c29d7ff54c52a9d20449df412579e001c55a8733ef0ddf0726389527dd",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 1095
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "형별성능관계내역-1.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\형별성능관계내역-1.pdf",
+      "sha256": "3715cbec6eb60b80f50a4ce151997f7e7fc7255ca0867cfbfeaf05cd70dc18d3",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 3799
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "형별성능관계내역-2.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\형별성능관계내역-2.pdf",
+      "sha256": "5f8662340cf1ec6b4cb1cecdb0e9c1759a15d5fdcf44144b993941aab6d31613",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 4390
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "형별성능관계내역-3.pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\형별성능관계내역-3.pdf",
+      "sha256": "2873c3d3e0be9b5b50efb23ef98afb45e74feb1809b69a498518789746ab633b",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 2527
+        }
+      ],
+      "sourceUnchanged": true
+    },
+    {
+      "file": "84A 방수,단열 결로방지 평면도(확장형).pdf",
+      "path": "C:\\Users\\woomi\\Desktop\\84A 방수,단열 결로방지 평면도(확장형).pdf",
+      "sha256": "60b3046e67bcbc85ad106166efdf3ed606acac44cf0bee0c64ac4cc0f81b3f83",
+      "pages": [
+        {
+          "page": 1,
+          "textChars": 805
+        }
+      ],
+      "sourceUnchanged": true
+    }
+  ],
+  "conflicts": [
+    {
+      "item": "2층 SL GL-relative mm",
+      "existingBuildingSection": 3550,
+      "additionalUnitSection": 3200,
+      "status": "기록 유지; 동 단면도 값 적용"
+    },
+    {
+      "item": "3층 SL GL-relative mm",
+      "existingBuildingSection": 6350,
+      "additionalUnitSection": 6000,
+      "status": "기록 유지; 동 단면도 값 적용"
+    }
+  ],
+  "note": "표기값의 존재 확인이며 201동 2층 적용 확정이 아님",
+  "resolution": {
+    "basis": "동 단면도; 사용자 지정",
+    "floor2SlMm": 3550,
+    "floor3SlMm": 6350,
+    "status": "사용자 결정으로 기준 확정"
+  }
+}

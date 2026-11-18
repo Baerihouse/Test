@@ -160,4 +160,17 @@ strict mode는 타입을 복잡하게 만들라는 뜻이 아니다. 제품 코�
 
 ## 8. Add-ons
 
+### PDF 현장 작업공간 (제품 0.3.0)
+
+- PDF.js(`pdfjs-dist` 6.x)를 브라우저에서 동적 import, worker는 Vite URL asset으로 동일 출처 제공. XFA와 스크립트/링크 레이어를 켜지 않고 Canvas로만 표시. 파일 형식/확장자/MIME/50MB 제한/페이지 수를 등록 전에 확인.
+- IndexedDB version1 `workspace`/`files`는 기존 브라우저 저장 제품의 확장. Supabase·SQL·운영 DB는 아직 없음. PDF Blob과 aggregate는 하나의 transaction으로 저장하고 revision 충돌을 거부.
+- Three.js viewer는 범용 검토 wall/opening 스냅샷을 받아 벽 조각·단순 창을 생성. 고정84A 엔진은 기존 참고 화면에만 남음.
+
+### 건축 3D 보기 (제품 0.2.0)
+
+- Three.js 0.187 + OrbitControls, TypeScript 타입 `@types/three`. 브라우저 feature에서 동적 import하고 SSR에서 WebGL을 초기화하지 않는다.
+- scene 생성·입력 이벤트·ResizeObserver·RAF·GPU 자원은 feature 소유이며 route unmount/재시도 시 해제한다.
+- 도면 래스터는 `apps/web/private/model-references`에 보관하고 인증된 `/model-reference` loader로만 제공한다. static public에 도면을 넣지 않는다.
+- 엔진 초기화 실패 시 오류/재시도와 원본 이미지 비교를 제공. 외부 CDN이나 이미지 생성 API는 사용하지 않는다.
+
 NestJS를 사용하는 프로젝트는 `.agents/code/NEST_GUIDE.md`와 `.agents/code/NEST_CF_WORKER.md`를 추가로 따른다.

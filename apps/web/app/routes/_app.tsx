@@ -1,6 +1,13 @@
 import { useState } from "react"
-import { Form, NavLink, Outlet, useLoaderData, type LoaderFunctionArgs } from "react-router"
-import { Bell, LogOut, Menu, PanelLeft, PanelLeftClose, X } from "lucide-react"
+import {
+  Form,
+  NavLink,
+  Outlet,
+  useLoaderData,
+  useLocation,
+  type LoaderFunctionArgs,
+} from "react-router"
+import { LogOut, Menu, PanelLeft, PanelLeftClose, X } from "lucide-react"
 import { MEMBER_ROLE_LABEL } from "~/entities/member/model/member"
 import { requireUser } from "~/features/auth/model/session.server"
 import { getVersionInfo } from "~/shared/lib/version.server"
@@ -9,7 +16,6 @@ import { navItems } from "~/shared/config/nav"
 import { useUiLayoutStore } from "~/shared/store/ui-layout.store"
 import { Badge } from "~/shared/ui/badge"
 import { Button } from "~/shared/ui/button"
-import { Input } from "~/shared/ui/input"
 import { VersionInfo } from "~/shared/ui/version-info"
 
 export async function loader({ request }: LoaderFunctionArgs) {
@@ -47,7 +53,7 @@ function Brand({ collapsed }: { collapsed?: boolean }) {
       {!collapsed ? (
         <>
           <span className="h-4 w-px shrink-0 bg-border" aria-hidden />
-          <span className="truncate text-sm font-semibold">표준템플릿</span>
+          <span className="truncate text-sm font-semibold">도면 모델링</span>
         </>
       ) : null}
     </div>
@@ -55,6 +61,13 @@ function Brand({ collapsed }: { collapsed?: boolean }) {
 }
 
 function NavList({ collapsed, onNavigate }: { collapsed?: boolean; onNavigate?: () => void }) {
+  const location = useLocation()
+  const current = new URLSearchParams(location.search)
+  const query = new URLSearchParams()
+  for (const key of ["site", "floor"]) {
+    const value = current.get(key)
+    if (value) query.set(key, value)
+  }
   return (
     <nav className="flex flex-1 flex-col gap-1 overflow-y-auto p-2">
       {navItems.map((item) => {
@@ -62,7 +75,7 @@ function NavList({ collapsed, onNavigate }: { collapsed?: boolean; onNavigate?: 
         return (
           <NavLink
             key={item.to}
-            to={item.to}
+            to={{ pathname: item.to, search: query.toString() }}
             end={item.end}
             onClick={onNavigate}
             title={collapsed ? item.label : undefined}
@@ -145,14 +158,11 @@ export default function AppLayout() {
           </Button>
 
           <div className="hidden flex-1 sm:block">
-            <Input placeholder="검색" className="max-w-sm" />
+            <span className="text-sm text-muted-foreground">현장 도면 · 검토 · 3D 모델</span>
           </div>
 
           <div className="flex flex-1 items-center justify-end gap-2 sm:flex-none">
-            <Badge tone="warning">SCAFFOLD</Badge>
-            <Button variant="ghost" size="icon" aria-label="알림">
-              <Bell aria-hidden />
-            </Button>
+            <Badge tone="warning">개발 버전</Badge>
             <div className="flex items-center gap-2 pl-1">
               <div
                 className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-medium text-primary"
@@ -177,7 +187,8 @@ export default function AppLayout() {
           {bannerOpen ? (
             <div className="flex items-center justify-between gap-3 bg-accent px-3 py-1.5 text-sm text-accent-foreground sm:px-5">
               <p>
-                이 화면은 스캐폴드입니다. 점선 가이드 영역과 샘플 데이터를 실제 콘텐츠로 교체하세요.
+                자료는 현재 브라우저에 저장됩니다. PDF 원본을 별도 보관하세요. 도면 검토 후 3D를
+                생성할 수 있습니다.
               </p>
               <button
                 type="button"

@@ -8,6 +8,8 @@
 
 ## 파일
 
+브라우저 로컬 저장의 관계는 [local-workspace-relations.md](local-workspace-relations.md)에 기록한다. 원격 SQL 테이블은 여전히 0개이며 이 문서는 SQL FK 자동 대조 대상이 아니다.
+
 | 파일 | 내용 | 상태 |
 | --- | --- | --- |
 | [현재-DB-ERD.md](현재-DB-ERD.md) | DB 에 **적용된** 테이블의 관계도와 테이블 ↔ 마이그레이션 표 | 비어 있음 — 첫 테이블을 만들 때 채운다 |

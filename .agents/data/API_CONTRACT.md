@@ -39,4 +39,6 @@ Notes:
 
 ## API Notes
 
+제품0.3.0의 현장/PDF/검토/모델 저장은 브라우저 IndexedDB repository이며 신규 HTTP write API가 없다. 기존 로그인 세션을 사용한다. 브라우저 데이터는 서버에 업로드하지 않는다. 기존 `/model-reference`는 인증 후 PNG 원본 비교용으로 유지한다. 원격 저장 도입 전 업로드 API·소유권·RLS·CSRF·스토리지 계약을 별도 정의해야 한다.
+
 아직 작성된 API 계약이 없다. 실제 endpoint가 생기면 이 섹션에 추가한다.

@@ -1,5 +1,13 @@
 # DB_SCHEMA.md
 
+## 제품 0.3.0 실제 저장 상태
+
+- 원격 PostgreSQL/Supabase 테이블: 0개. SQL migration/RLS/운영 DB 변경 없음.
+- 로컬 IndexedDB: `woomi-drawing-workspace`, version1. 구현 `features/project-workspace/model/repository.client.ts`.
+- `workspace`: 로그인 사용자ID key → schema version1 aggregate(현장 → 층 → 도면/검토벽/개구부/모델 이력, 현장별 자재), revision optimistic check. 중첩 모델은 의도적인 로컬 문서 저장 구조이며 SQL FK처럼 표시하지 않음.
+- `files`: `userId:documentId` key → PDF Blob. PDF 등록/삭제와 aggregate를 동일 transaction으로 commit.
+- `.agents/data/DOMAIN_MODEL.md`와 [로컬 저장 관계](../../docs/DB-ERD/local-workspace-relations.md) 참고. 인덱스는 keyPath 없는 primary key만 사용. 원격 공동 저장으로 전환할 때 별도 정규화·권한·migration 설계 필요.
+
 이 문서는 프로젝트의 DB table, column, index, RLS, RPC/function 정보를 진행 중에 정리하는 문서다.
 
 DB가 실제로 생기기 전까지는 비워둘 수 있다. 테이블, 컬럼, RPC, RLS가 추가되거나 변경될 때 같은 작업에서 갱신한다.

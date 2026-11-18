@@ -4,6 +4,7 @@ import { defineConfig } from "vite"
 import tsconfigPaths from "vite-tsconfig-paths"
 
 export default defineConfig({
+  optimizeDeps: { include: ["pdfjs-dist"] },
   server: { port: 5173 },
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
 })
